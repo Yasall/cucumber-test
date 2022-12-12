@@ -1,0 +1,4 @@
+{
+    "resultsDir": "cypress/results",
+    "reportDir": "allure-report"
+  }

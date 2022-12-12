@@ -1,4 +1,4 @@
-import {Given, Then} from "@badeball/cypress-cucumber-preprocessor";
+import {Given, When, Then} from "@badeball/cypress-cucumber-preprocessor";
 import { loginpage } from "../Pages/loginPage";
 
 //const loginpage =  require("../Pages/loginpage");
@@ -15,4 +15,19 @@ Then ('I enter the password {string}', (password) => {
 Then ('I click on the login button', () => {
     loginpage.clickLogin();
 })
+
+When('A user enters an incorrect username and password', (table) => {
+    table.hashes().forEach((row) => {
+        cy.log(row.username);
+        cy.log(row.password);
+        loginpage.typeUsername(row.username);
+        loginpage.typePassword(row.password);
+    });
+})
+
+Then('The error message should contain {string}', (errormessage) => {
+    loginpage.getErrorMessage(errormessage);
+})
 // })
+
+
