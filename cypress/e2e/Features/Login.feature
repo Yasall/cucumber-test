@@ -18,4 +18,5 @@ Background: Background name
  Then  I enter the username "standard_user"
  Then  I enter the password "secret_sauce"
  Then I click on the login button
+ Then Verify that I am logged in "inventory.html"
 

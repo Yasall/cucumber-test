@@ -4,6 +4,7 @@ class loginPage {
         passwordInput: () => cy.get('#password'),
         loginBtn: () => cy.get('#login-button'),
         errorMessage: () => cy.get('[data-test="error"]'),
+        url: () => cy.url()
     };
 
     typeUsername(username) {
@@ -20,6 +21,10 @@ class loginPage {
 
     getErrorMessage(errormessage) {
         this.elements.errorMessage().should('contain', errormessage);
+    }
+
+    getUrl(message) {
+        this.elements.url().should('contain', message);
     }
 }
 export const loginpage = new loginPage();

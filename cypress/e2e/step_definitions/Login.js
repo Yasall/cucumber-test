@@ -28,6 +28,10 @@ When('A user enters an incorrect username and password', (table) => {
 Then('The error message should contain {string}', (errormessage) => {
     loginpage.getErrorMessage(errormessage);
 })
+//inventory.html
+Then('Verify that I am logged in {string}', (message) => {
+    loginpage.getUrl(message);
+})
 // })
 
 

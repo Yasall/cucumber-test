@@ -1,0 +1,276 @@
+[
+  {
+    "description": "    I want to add items to my cart",
+    "elements": [
+      {
+        "description": "",
+        "id": "adding-items-to-cart;adding-items-to-cart",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Adding items to cart",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have logged in to saucedemo \"standard_user\", \"secret_sauce\"",
+            "result": {
+              "duration": 1007000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I add the backpack to the cart",
+            "result": {
+              "duration": 106000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I add light to the cart",
+            "result": {
+              "duration": 99000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I verify I have items in cart",
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I remove the bag from my cart",
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I remove the light from my cart",
+            "result": {
+              "duration": 191000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I verify the cart should be empty",
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "adding-items-to-cart",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Adding items to cart",
+    "uri": "cypress\\e2e\\Features\\AddToCart.feature"
+  },
+  {
+    "description": "    Logging in to sauce demo website",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "Background name",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on front page and I want to log in to sauce demo",
+            "result": {
+              "duration": 112000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "logging-in-a-website;unsuccessfull-login-to-website",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Unsuccessfull login to website",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 9,
+            "name": "A user enters an incorrect username and password",
+            "result": {
+              "duration": 560000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "testName",
+                  "secret_sauce"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I click on the login button",
+            "result": {
+              "duration": 99000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 13,
+            "name": "The error message should contain \"Epic sadface\"",
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "Background name",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on front page and I want to log in to sauce demo",
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "logging-in-a-website;successfull-login-in-to-website",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Successfull login in to website",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I enter the username \"standard_user\"",
+            "result": {
+              "duration": 312000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I enter the password \"secret_sauce\"",
+            "result": {
+              "duration": 285000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I click on the login button",
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Verify that I am logged in \"inventory.html\"",
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "logging-in-a-website",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Logging in a website",
+    "uri": "cypress\\e2e\\Features\\Login.feature"
+  }
+]

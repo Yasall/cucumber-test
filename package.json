@@ -13,12 +13,12 @@
 
     "nonGlobalStepDefinitions": false,
     "json": {
-      "enabled": false,
+      "enabled": true,
       "output": "jsonlogs/log.json",
-      "formatter": "cucumber-json-formatter.exe"
+      "formater": "cucumber-json-formatter.exe"
     },
     "messages": {
-      "enabled": false,
+      "enabled": true,
       "output":"jsonlogs/messages.ndjson"
     },
     "html": {
