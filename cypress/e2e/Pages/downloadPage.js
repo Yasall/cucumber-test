@@ -8,13 +8,7 @@ class downloadPage {
     }
 
     fileDownload(file) {
-        // var url = cy.get(URL) + "/";
-        // console.log(url);
-        // cy.request(url + "/" + file).then((response) => {
-        //     cy.writeFile('/downloads/{file}', response.body)
-        // })
-        cy.downloadFile("https://the-internet.herokuapp.com/download", 'Downloads', file);
-        
+        cy.downloadFile("https://the-internet.herokuapp.com/download", 'Downloads', file);     
     }
 
     verifyLocation(file) {
