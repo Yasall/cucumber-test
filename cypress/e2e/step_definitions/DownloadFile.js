@@ -16,3 +16,15 @@ Then('I download {string}', (file) => {
 Then('I Verify {string} exists in download folder', (file) => {
     downloadfile.verifyLocation(file);
 })
+
+Then('I navigate to secure file Downloader', () => {
+    cy.visit('https://admin:admin@the-internet.herokuapp.com/download_secure', {failOnStatusCode: false})
+})
+
+Then('I securely download {string}', (file) => {
+    downloadfile.secureDownload(file);
+})
+
+Then('I Verify {string} exists in download folder too', (file) => {
+    downloadfile.verifyLocation(file);
+})

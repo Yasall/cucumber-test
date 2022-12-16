@@ -1,6 +1,10 @@
 class downloadPage {
     elements = {
-        downloadPageLink: () => cy.get('#content > ul > li:nth-child(17) > a')   
+        downloadPageLink: () => cy.get('#content > ul > li:nth-child(17) > a')   ,
+        secureDownloadPageLink: () => cy.get('#content > ul > li:nth-child(37) > a'),
+        username: () => cy.get('#username'),
+        password: () => cy.get('#password'),
+        submitButton: () => cy.get('#submit-button')
     };
 
     navigate() {
@@ -13,6 +17,10 @@ class downloadPage {
 
     verifyLocation(file) {
         cy.readFile('Downloads/' + file);
+    }
+
+    secureDownload(file) {
+        cy.downloadFile("https://the-internet.herokuapp.com/download_secure", 'Downloads', file); 
     }
 
 } 
