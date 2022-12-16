@@ -3,6 +3,7 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@shelex/cypress-allure-plugin": "^2.34.0",
     "cypress": "^12.0.2",
+    "cypress-downloadfile": "^1.2.3",
     "esbuild": "^0.16.4"
   },
   "dependencies": {
@@ -10,7 +11,6 @@
     "allure": "^0.0.0"
   },
   "cypress-cucumber-preprocessor": {
-
     "nonGlobalStepDefinitions": false,
     "json": {
       "enabled": true,
@@ -19,7 +19,7 @@
     },
     "messages": {
       "enabled": true,
-      "output":"jsonlogs/messages.ndjson"
+      "output": "jsonlogs/messages.ndjson"
     },
     "html": {
       "enabled": false

@@ -28,3 +28,16 @@ Cypress.on("uncaught:exception", (err, runnable) => {
     // failing the test
     return false;
   });
+
+require('cypress-downloadfile/lib/downloadFileCommand')
+
+Cypress.Commands.add('downloadFile', (url, directory, fileName) => {
+    return cy.getCookies().then((cookies) => {
+      return cy.task('downloadFile', {
+        url,
+        directory,
+        cookies,
+        fileName,
+      })
+    })
+  })

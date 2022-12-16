@@ -52,3 +52,6 @@ allure-report/
 allure-results/
 # Cucumber Report
 reports
+
+#Downloads
+downloads/
