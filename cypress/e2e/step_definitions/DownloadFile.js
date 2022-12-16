@@ -13,6 +13,6 @@ Then('I download {string}', (file) => {
     downloadfile.fileDownload(file);
 })
 
-Then('I Verify file exists in download folder', (file) => {
+Then('I Verify {string} exists in download folder', (file) => {
     downloadfile.verifyLocation(file);
 })

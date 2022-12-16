@@ -13,17 +13,12 @@ class downloadPage {
         // cy.request(url + "/" + file).then((response) => {
         //     cy.writeFile('/downloads/{file}', response.body)
         // })
-        //cy.downloadFile(cy.get(URL), 'Downloads', file);
-        cy.downloadFile(cy.get(URL)+ '/' + file).then((response) => {
-            expect(response.status).to.eq(200)
-            expect(response.body).to.be.a('string')
-        })
+        cy.downloadFile("https://the-internet.herokuapp.com/download", 'Downloads', file);
+        
     }
 
     verifyLocation(file) {
-        cy.exists('Downloads/{file}').then((exists) => {
-            expect(exists).to.be.true
-        })
+        cy.readFile('Downloads/' + file);
     }
 
 } 
