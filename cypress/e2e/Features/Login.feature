@@ -4,14 +4,15 @@ Feature: Logging in a website
     
 Background: Background name
  Given I am on front page and I want to log in to sauce demo
- Scenario: Unsuccessfull login to website
+ Scenario Outline:  Unsuccessfull login to website
  
- When A user enters an incorrect username and password
-  | username   | password     |  
-  | testName   | secret_sauce | 
+ When A user enters an incorrect "<username>" and "<password>"
  Then I click on the login button
  Then The error message should contain "Epic sadface"
-
+ Examples:
+  | username   | password     |  
+  | testName   | secret_sauce | 
+  |second|password|
 
   Scenario: Successfull login in to website
  
