@@ -12,7 +12,7 @@ What I have done so far:
 
 
 NPM Installs
-npm install cypress --save-dev
-npm i --save-dev cypress-downloadfile
-npm i -D cypress @bahmutov/cypress-esbuild-preprocessor esbuild
-npm install @badeball/cypress-cucumber-preprocessor
+#npm install cypress --save-dev
+#npm i --save-dev cypress-downloadfile
+#npm i -D cypress @bahmutov/cypress-esbuild-preprocessor esbuild
+#npm install @badeball/cypress-cucumber-preprocessor
