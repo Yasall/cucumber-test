@@ -20,7 +20,7 @@ class downloadPage {
     }
 
     secureDownload(file) {
-        cy.downloadFile("https://the-internet.herokuapp.com/download_secure", 'Downloads', file); 
+        cy.downloadFile("https://admin:admin@the-internet.herokuapp.com/download_secure", 'Downloads', file); 
     }
 
 } 

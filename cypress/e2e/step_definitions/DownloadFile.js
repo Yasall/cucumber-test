@@ -22,9 +22,10 @@ Then('I navigate to secure file Downloader', () => {
 })
 
 Then('I securely download {string}', (file) => {
+    console.log('finish waiting');
     downloadfile.secureDownload(file);
 })
 
-Then('I Verify {string} exists in download folder too', (file) => {
+Then('I verify {string} exists in download folder too', (file) => {
     downloadfile.verifyLocation(file);
 })

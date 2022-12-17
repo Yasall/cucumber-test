@@ -12,4 +12,4 @@ Feature: Downloading a file
         Given I am on the heroku website
         Then I navigate to secure file Downloader
         Then I securely download "Selenium.png"
-        Then I verify "Selenium.pdf" exists in download folder too
+        Then I verify "Selenium.png" exists in download folder too
