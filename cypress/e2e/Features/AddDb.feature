@@ -23,9 +23,9 @@ Feature: Adding a DB project
 
     Scenario Outline: I verify data exists in table
         Given I am connected to "<database>"
-        Then I query "<table>"
-        Then I verify that "<data>" exists
+        Then I query "<table>" and I verify that "<data>" exists
 
+       
         Examples:
             | database | table | data |
             | myTestDb.db  | users  | yallie | 
