@@ -22,5 +22,8 @@ class DBConnect {
     verifyValue(database, table ,data) {
         let db = db.prepare(`../resources/${database}`);
         const results = db.prepare(`select * from ${table} where username = ${data}`)
+        expect(results).to.exist;
+
+        db.close();
     }
 }
